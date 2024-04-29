@@ -1,0 +1,210 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #181818; /* Negro */
+  color: #333; /* Gris oscuro para mejor contraste con el blanco */
+  background-image: url('bones.png');
+  background-repeat: repeat;
+  margin: 0;
+}
+
+/* Contenedor de inicio de sesión */
+#contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+}
+
+#central {
+  max-width: 320px;
+  width: 100%;
+}
+
+.titulo {
+  font-size: 250%;
+  color: #8b0000; /* Rojo carmesí */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#login {
+  width: 100%;
+  padding: 50px 30px;
+  background-color: #ffffff; /* Blanco */
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  box-sizing: border-box;
+}
+
+#login input[type="text"],
+#login input[type="file"] {
+  font-family: 'Overpass', sans-serif;
+  font-size: 110%;
+  color: #1b262c;
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 5px 5px 5px 10px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background-color: #f2f2f2; /* Gris claro */
+}
+
+#login input[type="file"]::before {
+  content: "Seleccionar foto de perfil";
+  display: inline-block;
+  background-color: #bbe1fa;
+  color: #1b262c;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#login input::placeholder {
+  font-family: 'Overpass', sans-serif;
+  color: #999999; /* Gris oscuro */
+}
+
+#login button {
+  font-family: 'Overpass', sans-serif;
+  font-size: 110%;
+  color: #ffffff; /* Blanco */
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background-color: #8b0000; /* Rojo carmesí */
+  margin-top: 10px;
+}
+
+#login button:hover {
+  background-color: #6b0000; /* Rojo carmesí oscuro */
+  color: #ffffff; /* Blanco */
+}
+
+.pie-form {
+  font-size: 90%;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.pie-form a {
+  display: block;
+  text-decoration: none;
+}
+
+/* Estilos del chat */
+#chat-container {
+  display: none;
+  padding: 20px;
+  background-color: #f9f9f9; /* Gris claro */
+  border-radius: 5px;
+  margin: auto; /* Centro horizontalmente */
+  margin-top: 20px;
+  max-width: 600px; /* Limita el ancho del chat */
+}
+
+#user-info {
+  margin-bottom: 20px;
+}
+
+#user-info span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+#messages {
+  width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.message.outgoing {
+  background-color: #8b0000; /* Rojo carmesí */
+  color: #fff; /* Blanco */
+}
+
+.message.incoming {
+  background-color: #f2f2f2; /* Gris claro */
+  color: #333; /* Gris oscuro */
+}
+
+#input-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#message-input {
+  flex: 1;
+  height: 40px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#media-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.media-button {
+  margin-right: 10px;
+}
+
+.media-button img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+#send-button {
+  width: 100px; /* Ancho del botón */
+  margin-top: 10px; /* Margen superior */
+  background-color: #8b0000; /* Color de fondo rojo carmesí */
+  color: #fff; /* Color de texto blanco */
+  border: 1px solid #000; /* Borde negro de 1px */
+  border-radius: 5px; /* Borde redondeado */
+  padding: 8px 0; /* Espacio interno */
+  cursor: pointer; /* Cursor apuntador al pasar el ratón */
+  transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+  text-align: center; /* Centra el texto horizontalmente */
+  font-size: 14px; /* Tamaño de fuente */
+}
+
+#send-button:hover {
+  background-color: #6b0000; /* Color de fondo rojo carmesí oscuro al pasar el ratón */
+}
+
